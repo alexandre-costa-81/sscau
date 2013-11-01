@@ -8,6 +8,30 @@ link para percom magazine com o link para a revista: http://nslab.ee.ntu.edu.tw/
 No site - Network and Systems Laboratory: http://nslab.ee.ntu.edu.tw/ dentro da sessão: ispace
 
 
+INTRODUÇÃO
+
+O sistema dado foi desenvolvido em 2004 por este motivo foram usada tecnologias da época.
+
+Fala que pode substituido a tecnologia usada por outra sem mudar os requisitos do sistema. Foi desenvolvido para atuar em diversas localidades tanto em areas metropolitanas como areas ruais. 
+Alternative technologies can easily replace existing components without altering the system requirements. The plug-and-play design serves diverse locales, from metropolitan areas with high-data-rate digital communication systems to rural locales with older cellular telephony to space-based platforms with microgravity, radiation, and safety to consider. 
+
+
+A sessão Wearable server and ECG collection fala de informações tecnicas de ECG. Explica como o sensor ECG envias as informações para o WEARABLE SERVER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
