@@ -53,13 +53,14 @@
 %\textsc{\large Arrhythmia Monitoring System (AMS)}\\[0.5cm] % Minor heading such as course title
 
 \HRule \\[0.4cm]
-{ \huge \bfseries Arrhythmia Monitoring System (AMS)}\\[0.4cm] % Title of your document
+{ \huge \bfseries Survey of Context Provisioning Middleware}\\[0.4cm] % Title of your document
 \HRule \\[1.5cm]
 
 \begin{minipage}{0.4\textwidth}
 \begin{flushleft} \large
 \emph{Author:}\\
-Alexandre Costa % Your name
+Alexandre Costa \\
+Caue Duarte
 \end{flushleft}
 \end{minipage}
 
@@ -106,6 +107,12 @@ Palavras-chave: Middleware, Provisioning contexto, gestão de contexto, represen
 
 Ubiquitous Computing (UbiComp) parafraseia o paradigma de componentes de software que está sendo transparente interligados por meio de comunicação sem fio e hardware. Valor acrescentado inteligência computacional resultante da rede inteligente e autônoma de vários dispositivos tem muito mais potencial do que o proveniente de um único dispositivo, isolado. Um dos principais objetivos destes sistemas é o de simplificar significativamente Interação Humano-Computador (IHC), implantando sensores, processadores e atuadores no tecido da vida cotidiana, de modo que a sua presença e complexidade está escondida dos usuários [1]. UbiComp é comumente entendido como a próxima onda de uma cadeia de evolução dos paradigmas de computação, que passaram a computação pessoal (segunda geração) e computação distribuída (terceira geração) a partir das raízes da computação em mainframe. A figura 1 ilustra a nossa visão dessa evolução e destaca algumas das características pertinentes para a realização de UbiComp.
 
+\begin{figure}[H]
+\center{\includegraphics[width=0.5\linewidth]{figura1}}
+\caption{Evolution Chain and Features of Ubiquitous Computing}
+\label{fig:speciation}
+\end{figure}
+
 %------------------------------------------------
 
 \subsection{Context and Context-awareness} % Sub-section
@@ -113,12 +120,6 @@ Ubiquitous Computing (UbiComp) parafraseia o paradigma de componentes de softwar
 %Context is information about a location, its environmental attributes (e.g. noise level, light intensity, temperature, and motion) and the people, devices, objects and software agents that it contains. Context may also include system capabilities, services offered and sought, the activities and tasks in which people and computing entities are engaged, and their situational roles, beliefs, and intentions. Context-awareness is one of the key enablers to facilitate proactive support of users in their current situation. Users do not have to define their situation explicitly by utilising time consuming and counter-intuitive input devices but it is implicitly recognised by the “smart” environment instead. The idea that computing devices can sense and react to stimuli from users’ environment is labelled as context-aware computing.
 
 Contexto é a informação sobre a localização, os seus atributos ambientais (por exemplo, nível de ruído, intensidade de luz, temperatura e movimento) e as pessoas, aparelhos, objetos e agentes de software que contém. Contexto também pode incluir sistema capacidades, serviços oferecidos e procurados, as atividades e tarefas em que as pessoas e entidades de computação estão envolvidos, e seus papéis situacionais, crenças e intenções. Context-awareness é um dos elementos fundamentais para facilitar o apoio pró-ativa de usuários em sua situação atual. O usuário não tem que definir sua situação explicitamente utilizando demorado e dispositivos de entrada de contra-intuitivos, mas é implicitamente reconhecida pelo ambiente "inteligente" em seu lugar. A idéia de que os dispositivos de computação pode sentir e reagir aos estímulos do ambiente dos usuários é rotulado como a computação context-aware.
-
-\begin{figure}[H]
-\center{\includegraphics[width=0.5\linewidth]{figura1}}
-\caption{Evolution Chain and Features of Ubiquitous Computing}
-\label{fig:speciation}
-\end{figure}
 
 %User identity and location are the most prominent context parameters widely utilised in various location-based services. Beyond that, as defined by Dey [2], context may comprise any information relevant for describing the users’ interaction with each other and with context-aware services and applications. In our digital world there is a large amount of distributed information available describing such interaction in a diverse way, e.g. the location of a person (GPS enabled smart phones), activity (phone-based gyroscope, accelerometer, foreground applications, digital calendar), social situation (location, time of the day, proximity to friends) and evolving preferences (self-configured and history-based digital profiles).
 
