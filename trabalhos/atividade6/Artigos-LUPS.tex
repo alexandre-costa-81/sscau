@@ -45,7 +45,7 @@
 
 \IEEEcompsoctitleabstractindextext{%
 \begin{abstract}
-Resumo no  uma introduo ao artigo, mas sim uma descrição sumria da sua totalidade, na qual se procura realar os aspectos mencionados. Deve ser discursivo, e no apenas uma lista dos tpicos que o artigo cobre. Deve-se entrar na essncia do resumo logo na primeira frase, sem rodeios introdutrios nem recorrendo  frmula estafada "Neste artigo...". Este deve ser escrito em um pargrafo nico e conter entre 120 e 180 palavras. Devem-se evitar em um resumo: (i) Smbolos e contraes que no sejam de uso corrente; (ii) Frmulas, equaes, diagramas etc., que no sejam absolutamente necessrios. No citar referncias bibliogrficas no resumo. Logo aps o resumo devem vir as palavras-chave, que so palavras representativas do contedo do documento. As palavras-chave devem ser separadas entre si por vrgula e finalizadas por ponto. No mnimo 3 e no mximo 5 palavras.
+%Resumo não é uma introdução ao artigo, mas sim uma descrição sumária da sua totalidade, na qual se procura realar os aspectos mencionados. Deve ser discursivo, e não apenas uma lista dos tópicos que o artigo cobre. Deve-se entrar na essência do resumo logo na primeira frase, sem rodeios introdutrios nem recorrendo à fórmula estafada "Neste artigo...". Este deve ser escrito em um parágrafo único e conter entre 120 e 180 palavras. Devem-se evitar em um resumo: (i) Smbolos e contrações que no sejam de uso corrente; (ii) Fórmulas, equações, diagramas etc., que no sejam absolutamente necessários. Não citar referências bibliográficas no resumo. Logo após o resumo devem vir as palavras-chave, que são palavras representativas do conteúdo do documento. As palavras-chave devem ser separadas entre si por vírgula e finalizadas por ponto. No mínimo 3 e no máximo 5 palavras.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -60,118 +60,226 @@ Palavra-chave 1, Palavra-chave 2, Palavra-chave 3, Palavra-chave 4.
 \section{Introdução}
 
 
-\IEEEPARstart{E}{}ste arquivo  apenas uma demonstrao de um artigo da Revista LUPS. Seu objetivo  servir como um "arquivo de partida" para os autores, pois traz uma srie de itens comuns, tais como sees, subsees, tabelas, imagens, entre outros que certamente sero utilizados no decorrer da redao de cada captulo. Sucesso a todos na escrita.
-
-
-Este arquivo  apenas uma demonstrao de um artigo da Revista LUPS. Seu objetivo  servir como um "arquivo de partida" para os autores, pois traz uma srie de itens comuns, tais como sees, subsees, tabelas, imagens, entre outros que certamente sero utilizados no decorrer da redao de cada captulo. Sucesso a todos na escrita.
-
-
-Este arquivo  apenas uma demonstrao de um artigo da Revista LUPS. Seu objetivo  servir como um "arquivo de partida" para os autores, pois traz uma srie de itens comuns, tais como sees, subsees, tabelas, imagens, entre outros que certamente sero utilizados no decorrer da redao de cada captulo. Sucesso a todos na escrita.
-
-
-Este arquivo  apenas uma demonstrao de um artigo da Revista LUPS. Seu objetivo  servir como um "arquivo de partida" para os autores, pois traz uma srie de itens comuns, tais como sees, subsees, tabelas, imagens, entre outros que certamente sero utilizados no decorrer da redao de cada captulo. Sucesso a todos na escrita.
-
+\IEEEPARstart{T}{}écnicas de Consciência de Situação são amplamente utilizadas por diversas áreas dentro das Ciências da Computação, normalmente ligadas a consequência dos estudos em consciecência de contexto, com o diferencial possuir raciocínio agregado. 
+Nesse contexto, buscamos no presente trabalho definir principais conceitos referentes a computação ubíqua e consciência de situação além de explorar o emprego de sistemas baseados em regras para prover esse raciocínio, em alguns trabalhos relacionados.
+Foram analisados os seguintes projetos Collaborative Context-Aware Service Platform for Pervasive Computing (CoCA), WComp, a Middleware for Ubiquitous Computing (WComp), A Rule-Based Platform for Situation Management (SCENE) e por fim Framework and Rule-based Language for Facilitating Context-aware Computing using Information Appliances - (Context-Aware rule Description Language - CADEL).
 
 %------------------------------------------------------------------------------
 
 \section{Computação Ubíqua}
 
 
+O nome Ubíquo vem do Latim \textit{ubiquu}, que significa estar em todos os locais.    
+Mark Weiser, então cientista do Centro de Pesquisa da Xerox, definiu em seu artigo intitulado  \textit{The Computer for the 21st Century} o termo Computação Ubíqua como sendo a presença direta e constante de serviços de computação na vida dos usuários finais, dividindo a computação entre diversos dispositivos conectados entre si.
+O desafio dos cientistas é tornar real o pensamento de Weiser, e consequentemente a ubiquidade na computação, fazendo com que as interfaces se tornem transparentes, armazenem informações e aprendam apartir dessas informações. Compartilhar dados, informações de forma mais fácil e transparente, esta tecnologia fará parte do processo de evolução do ser humano, onde ca vez mais a computação centralizada deixar de ser o único agente que o usuário interage e multiplicar-se para usos especializados.
+A Computação Ubíqua,  não se resume apenas pela computação, seu objetivo é integrar totalmente a relação computação/periféricos com o usuário tornando-se  invisível, no sentido de a utilizar sem perceber.
+A computação, embarcada nos mais diversos computadores, já faz parte da vida das pessoas em maior ou menor grau e essa interação juntamente com o número da computadores tente a aumentar, tornando-se onipresente na vida do usuário. Para tornar isso possível, busca-se a utilização de interfaces naturais, tornando a comunicação com esses dispositivos mais transparente, interagindo com o usuário por meio de gestos, fala e visão, por exmeplo.
+Outra forma de interação é através da computação sensível ao contexto, que através do processamento de dados oriundos dos mais diversos sensores, percebe e interage com a realidade do ambiente como por exemplo a movimentação do usuário através de um ambiente monitorado.    
+O computador, presente nos mais diversos dispositivos (smartphones, tablets, etc..), possui interfaces de comunicação, e como todas interfaces já consolidadas, tende a se tornar imperceptivel, uma extensão dos sentidos humanos. Como exemplo de interfaces podemos citar um óculos ou uma bengala, que pelo uso contínuo, o usuário abstrai o utensilio em si, utilizando-o de forma transparente, focando apenas na realidade trazida pelo mesmo. Sob esta premissa, o uso das interfaces passa a tornar-se inconsciente~\cite{Weiser93}.
+Nesse contexto as aplicações precisam “entender” e se ajustar ao ambiente, através do processamento de informações sobre o contexto em que estão inseridas ~\cite{Maciel}.
+Essa nova classe de sistemas computacionais, conscientes ao contexto, abre perspectivas para o desenvolvimento de aplicações muito mais ricas, elaboradas e complexas, que exploram a natureza dinâmica e a mobilidade do usuário. Um desafio central na programação deste tipo de aplicação é possibilitar que as mesmas se adaptem continuamente ao ambiente e permaneçam funcionando mesmo quando o indivíduo se movimentar ou trocar de dispositivo ~\cite{GrimmB03, Cac08}.
+A Computação Ubíqua é entendida como o terceiro grande paradigma computacional, precedido pelos \textit{mainframes} e pela computação pessoal ~\cite{Weiser97}. Com foco em demandas institucionais, hoje atende demandas específicas, os \textit{mainframes}, computadores de grande porte, atendem requisições de inúmeros usuários. Já com a computação pessoal, observamos uma convergência das máquinas para uso pessoal.
+Visualizamos a computação ubíqua como uma rede invisível que permeia o usuário com dispositivos inteligentes e que se intercomunicam, aprendem uns com os outros, com o ambiente e tomam decisões. Os recusos computacionais devem estar disponíveis ao usuário, promovendo adaptações dinâmicas tanto dos serviços quanto aplicações satisfazendo as necessidades do usuário, de maneira mais transparente possível. Considerando esta perspectiva, a Computação Ubíqua constitui um ambiente altamente distribuído, heterogêneo, dinâmico, móvel, mutável e com forte interação entre homem e máquina ~\cite{Augustin03}.        
+Um caminho breve para a Computação Ubíqua é a imersão total do usuário nessa rede invisível, não só de computadores, \textit{smartphones}, \textit{tablets}, mas de dispositivos comuns, até então não associados com computação, como eletrodomésticos ao exemplo das já consolidadas \textit{smartv's}, além de outros tantos como mesas, talheres e até ambientes inteiros. Através de estratégias de \textit{cloud computing} (computação em nuvem) interligando esses dispositivos por rede, internet, \textit{bluetooth} podem trocar dados, processar informações e executar qualquer ação que possa ser interessante do ponto de vista do usuário ou sistema.
+
+
 %O termo Computação Ubíqua foi introduzido pelo cientista Mark Weiser, que no início dos anos 90, já previa um aumento nas funcionalidades e na disponibilidade de serviços de computação para os usuários finais, entretanto com a visibilidade destes serviços sendo a menor possível. Deste modo, a computação no seria exclusividade de um computador, mas de diversos dispositivos conectados entre si.
 
-O termo Computação Ubíqua foi usado pela primeira vez no artigo “The Computer for the 21st Century” do cientista Mark Weiser em 1991. Neste artigo ele previa um aumento nas funcionalidades e na disponibilidade de serviços computacionais por parte dos usuários, porem com a possibilidade da transparência bem reduzida. Com isso, a lógica computacional não seria apenas de computadores, mas também de outros dispositivos que estão interconectados.
+%O termo Computação Ubíqua foi usado pela primeira vez no artigo “The Computer for the 21st Century” do cientista Mark Weiser em 1991. Neste artigo ele previa um aumento nas funcionalidades e na disponibilidade de serviços computacionais por parte dos usuários, porem com a possibilidade da transparência bem reduzida. Com isso, a lógica computacional não seria apenas de computadores, mas também de outros dispositivos que estão interconectados.
 
 %A Computação Ubíqua, nesta perspectiva, não significa um computador que possa ser transportado para diferentes lugares. Mesmo o mais funcional notebook, com acesso a Internet ainda foca a atenção do usuário num único equipamento. Comparando  escrita, carregar este poderoso notebook  como carregar um livro muito importante. Por mais significativo que seja este livro, no significa capturar o real poder da Literatura (WEISER, 1991).
 
-Dessa forma Computação Ubíqua tem por objetivo fazer com que a interação com o computador passe a ser invisível. Ou seja, deixar o dispositivo computacional tão integrado que ele seja praticamente invisível, do mesmo modo que um motorista não enxerga todo o processo de realizar uma marcha quando ele troca de uma marcha para outra.
+%Dessa forma Computação Ubíqua tem por objetivo fazer com que a interação com o computador passe a ser invisível. Ou seja, deixar o dispositivo computacional tão integrado que ele seja praticamente invisível, do mesmo modo que um motorista não enxerga todo o processo de realizar uma marcha quando ele troca de uma marcha para outra.
 
-Uma analogia oportuna seria o surgimento da escrita moderna. Conhecimento que durante muito tempo foi acessível exclusivamente aos mais conceituados especialistas das letras, hoje está integralmente imerso em nosso cotidiano e imperceptivelmente, constituindo uma tecnologia consumida em larga escala.
-A concretização do pensamento de Weiser, e consequentemente a ubiquidade da informática, ter atingido sua plenitude quando a computação for aplicada com a mesma naturalidade que hoje  utilizada a língua escrita e os motores, agora elétricos e embarcados, para realização de atividades do cotidiano, ou seja, a comunidade ter alcançado a era da computação ubíqua quando o computador deixar de ser peça única e de uso genérico e multiplicar-se para usos especializados.
-O computador uma interface de comunicação e, como todas as interfaces consolidadas, ele tende a ser imperceptível. Por exemplo, os óculos são uma interface entre o ser humano e o mundo mas, o ser humano não concentra suas atenções no óculos, mas no mundo. Uma pessoa cega, ao utilizar sua bengala, percebe o mundo ao seu redor, e no a bengala. Sob esta premissa, o uso das interfaces passa a tornar-se inconsciente (WEISER, 1993).
-A Computação Ubíqua entendida como sendo o terceiro grande paradigma computacional, precedido pelo império dos mainframes e pela onda da computação pessoal (WEISER; BROWN, 1997). Com foco em demandas administrativas no passado e hoje presente em cenários específicos, os computadores de grande porte foram concebidos sobre uma arquitetura onde, poucas máquinas de imenso poder de processamento, são compartilhadas simultaneamente por inúmeros usuários. Com o domínio dos microcomputadores, observamos a máquina como peça de uso pessoal e exclusivo. Por fim, na Computação Ubíqua, veremos a tecnologia formando uma malha de dispositivos inteligentes em torno de cada indivíduo.
-As aplicações ubíquas, em uma visão mais ampla, devem prever a mobilidade de equipamentos e usuários, denominada mobilidade física, e também dos componentes da aplicação e serviços, chamada de mobilidade lógica. Para isso, as aplicações devem ter o estilo siga-me, facultando que o usuário possa acessar seu ambiente computacional independente da localização, do tempo e do dispositivo utilizado (YAMIN, 2004).
-Para tal, as aplicações precisam "entender" e se adaptar ao ambiente, compreendendo o contexto em que esto inseridas (MACIEL; ASSIS, 2004). Essa nova classe de sistemas computacionais, conscientes ao contexto, abre perspectivas para o desenvolvimento de aplicações muito mais ricas, elaboradas e complexas, que exploram a natureza dinâmica e a mobilidade do usuário. Um desafio central na programação deste tipo de aplicação  possibilitar que as mesmas se adaptem continuamente ao ambiente e permaneçam funcionando mesmo quando o indivíduo se movimentar ou trocar de dispositivo (GRIMM; BERSHAD, 2003; COSTA; YAMIN; GEYER, 2008).
-A Computação Ubíqua considerando esta perspectiva, constitui um ambiente altamente distribuído, heterogêneo, dinâmico, móvel, mutável e com forte interação entre homem e máquina (AUGUSTIN, 2003). Neste contexto, o usuário desloca-se e comunica-se com os recursos computacionais do ambiente em que se encontra, promovendo adaptação dinâmica dos serviços e aplicações, de tal forma que as suas necessidades sejam satisfeitas, da maneira mais natural e transparente possíveis.
-
-
-%------------------------------------------------------------------------------
-
-\section{Conscincia de Situação}
-
-%Aqui falar de Conscincia de Situao de modo geral e introdutório e conceitos.
-%Survey
-%Trabalho Ana
-%Trabalho Ricardo
+%Uma analogia oportuna seria o surgimento da escrita moderna. Conhecimento que durante muito tempo foi acessível exclusivamente aos mais conceituados especialistas das letras, hoje está integralmente imerso em nosso cotidiano e imperceptivelmente, constituindo uma tecnologia consumida em larga escala.
+%A concretização do pensamento de Weiser, e consequentemente a ubiquidade da informática, ter atingido sua plenitude quando a computação for aplicada com a mesma naturalidade que hoje  utilizada a língua escrita e os motores, agora elétricos e embarcados, para realização de atividades do cotidiano, ou seja, a comunidade ter alcançado a era da computação ubíqua quando o computador deixar de ser peça única e de uso genérico e multiplicar-se para usos especializados.
+%O computador uma interface de comunicação e, como todas as interfaces consolidadas, ele tende a ser imperceptível. Por exemplo, os óculos são uma interface entre o ser humano e o mundo mas, o ser humano não concentra suas atenções no óculos, mas no mundo. Uma pessoa cega, ao utilizar sua bengala, percebe o mundo ao seu redor, e no a bengala. Sob esta premissa, o uso das interfaces passa a tornar-se inconsciente (WEISER, 1993).
+%A Computação Ubíqua entendida como sendo o terceiro grande paradigma computacional, precedido pelo império dos mainframes e pela onda da computação pessoal (WEISER; BROWN, 1997). Com foco em demandas administrativas no passado e hoje presente em cenários específicos, os computadores de grande porte foram concebidos sobre uma arquitetura onde, poucas máquinas de imenso poder de processamento, são compartilhadas simultaneamente por inúmeros usuários. Com o domínio dos microcomputadores, observamos a máquina como peça de uso pessoal e exclusivo. Por fim, na Computação Ubíqua, veremos a tecnologia formando uma malha de dispositivos inteligentes em torno de cada indivíduo.
+%As aplicações ubíquas, em uma visão mais ampla, devem prever a mobilidade de equipamentos e usuários, denominada mobilidade física, e também dos componentes da aplicação e serviços, chamada de mobilidade lógica. Para isso, as aplicações devem ter o estilo siga-me, facultando que o usuário possa acessar seu ambiente computacional independente da localização, do tempo e do dispositivo utilizado (YAMIN, 2004).
+%Para tal, as aplicações precisam "entender" e se adaptar ao ambiente, compreendendo o contexto em que esto inseridas (MACIEL; ASSIS, 2004). Essa nova classe de sistemas computacionais, conscientes ao contexto, abre perspectivas para o desenvolvimento de aplicações muito mais ricas, elaboradas e complexas, que exploram a natureza dinâmica e a mobilidade do usuário. Um desafio central na programação deste tipo de aplicação  possibilitar que as mesmas se adaptem continuamente ao ambiente e permaneçam funcionando mesmo quando o indivíduo se movimentar ou trocar de dispositivo (GRIMM; BERSHAD, 2003; COSTA; YAMIN; GEYER, 2008).
+%A Computação Ubíqua considerando esta perspectiva, constitui um ambiente altamente distribuído, heterogêneo, dinâmico, móvel, mutável e com forte interação entre homem e máquina (AUGUSTIN, 2003). Neste contexto, o usuário desloca-se e comunica-se com os recursos computacionais do ambiente em que se encontra, promovendo adaptação dinâmica dos serviços e aplicações, de tal forma que as suas necessidades sejam satisfeitas, da maneira mais natural e transparente possíveis.
 
 
 
-
-
-
-%So o trabalho do ricardo {
-\subsection{Passos para aquisião da conciencia de situaao}
-
-\subsubsection{Percepao}
-\subsubsection{Compreenao}
-\subsubsection{Projeao}
-%}
-
-%Survey{
-\subsection{Sensores e dados}
-
-\subsection{Tecnicas de Identificaao de Situacao}
-
-\subsubsection{Learning-based approaches}
-
-Movendo-se para o lado direito da figura. 2, os avanos em tecnologias de sensores impulsionar a implantação de uma ampla gama de sensores, que no entanto prejudicaram o desempenho das abordagens baseadas em especificações. Menos visível para apenas usar o conhecimento de especialistas para definir as especificações adequadas de situações a partir de um grande número de dados de sensores ruidosos. Para resolver este problema, técnicas de aprendizado de máquina e mineração de dados são emprestados para explorar as relações de associação entre os dados e situações de sensores. Uma grande quantidade de pesquisas têm sido realizadas na rea de reconhecimento de atividade em ambientes inteligentes recentemente.
-Uma série de modelos derivados bayesianos são popularmente aplicados, incluindo Naive Bayes [30,31] e redes Bayesianas [32,22] com a força de codificação causal (dependência) relacionamentos e dinâmicas Bayesian Networks [33], Hidden Markov Models [34, 35] e Campos Aleatórios Condicionais [36,10], com a força de codificação de relações temporais. Inspirado da modelagem da linguagem, abordagens baseadas em gramática como (estocásticos) gramáticas livres de contexto são aplicados em representar a semântica estrutural complexo de processos em situações hierárquicas [37-39]. As árvores de decisão [40,5], redes neurais [41], e Support Vector Machines [42,43] como uma outra filial em técnicas de aprendizado de máquina, que são construídos sobre informação entropia, também têm sido utilizados para classificar os dados do sensor para situações com base em características extradas dos dados do sensor.
-Embora as técnicas de aprendizagem acima têm alcançado bons resultados na identificação de situação, eles precisam de uma grande quantidade de dados de treinamento para criar um modelo e estimar os parâmetros do modelo [44]. Ao treinar dados são preciosos, os pesquisadores estão motivados para aplicar técnicas de mineração de web para descobrir o conhecimento de senso comum entre as situações e objetos minerando os documentos on-line, ou seja, o que os objetos são usados ??em uma determinada atividade humana e como significativo o objeto está em identificar essa atividade [45-47]. Algumas técnicas de mineração de dados sem supervisão têm sido aplicados, bem como, incluindo-árvore de sufixos [48,49] e Jeffrey divergncia [50,51].
-
-\subsubsection{Specification-based approaches}
-
-Nos estgios iniciais, a pesquisa de identificao situao começa quando há alguns sensores, cujos dados são fáceis de interpretar e as relações entre os dados e situações de sensores são fáceis de estabelecer. A pesquisa consiste principalmente em abordagens baseadas em especificações que representam o conhecimento especializado nas regras da lógica e aplicar mecanismos de raciocínio para inferir situações apropriadas da entrada do sensor de corrente. Essas abordagens têm desenvolvido a partir de tentativas anteriores de primeira ordem lógica [21,22] para um modelo de lógica mais formal [20], que visa apoiar o raciocnio eficiente, mantendo o poder expressivo, para apoiar a anlise formal, e para manter a solidez e integridade de um sistema lógico. Com as suas capacidades de representao e raciocínio poderosos, ontologias têm sido amplamente aplicada [23-25,19]. As ontologias podem fornecer um vocabulário padrão de conceitos para representar o conhecimento do domínio, as especificações e as relações semânticas de situações definidas nas abordagens da lógica formal. Eles também podem fornecer motores de raciocínio de pleno direito  razão neles seguinte axiomas e restries especificadas nas abordagens da lógica formal.
-
-Como mais e mais sensores são implantados em ambientes do mundo real para uma experiência de longo prazo, a incerteza de dados do sensor começa a ganhar atenção. Para lidar com a incerteza, as técnicas baseadas em lógica tradicionais precisam ser incorporados com outras técnicas probabilsticas [26]: onde a segurança associada com uma situação inferida, n é o número de condições que contribuem para a identificação dessa situação, wi  a massa de uma determinada condição, e ? (xi)  o grau em que a condição é satisfeita pelo actual dados do sensor.
-
-A fórmula geral acima revela dois problemas na identificação situação. Em primeiro lugar, a satisfação de uma condição não é de modo nítido verdadeira ou falsa, o que deve levar em conta é a imprecisão dos dados do sensor. A lógica fuzzy, com a sua força para lidar com a imprecisção, foi aplicado para resolver esta questão [27]. Em segundo lugar, não contribui para cada condição identificar uma situao para o mesmo grau, de modo que o problema torna-se a forma de identificar o significado de cada prova, como resolver evidência de oposição, e como agregar evidência. Teorias como a teoria da evidência de Dempster-Shafer têm sido utilizados para resolver este problema [28,29].
-
-%}
 
 
 %------------------------------------------------------------------------------
 
 \section{Projetos em Conscincia de Situao Explorando Regras}
 
-Nesta seção serão descritos os principais trabalhos que se utilizam de regras para prover consciência de situação.
+Um dos primeiros e, portanto, mais amplamente desenvolvidos modelos de tomada de decisão são sistemas de baseados regras. Seu  desenvolvimento começou na década de 60, mas tornou-se comum nos anos 70 e 80.
+
+Regras podem ser  uma generalização geralmente válida , um princípio regulador , um método para a realização de uma determinada  operação matemática e obter um certo resultado. Exemplos do uso de regras  :
+
+Regras em sistemas especialistas
+
+IF (condição 1) AND (condição 2) AND (condição 3) AND (condição 4) THEN (solução 1)
+
+
+Regras na Web Semântica utilizando SWRL:
+
+condição1(?x1,?x2) $\wedge$ condição2(?x2,?x3) $\Rightarrow$ solução1(?x1,?x3)
+
+Regras na Computação Ubíqua  em  ECA-DL
+
+
+Sobre  Regra1(p)
+
+Quando Condição (p)
+
+Faça Ação  (p, “mensagem”)
+
+
+Regras em bancos de dados ( regras  de consistência)
+
+CREATE TABLE acidtest (A INTEGER, B INTEGER CHECK (A + B = 100));
+
+
+Interfaces de configuraçaõ de regras de alto nível
+
+(retirar imagem da tela de configuração do cobalto , ou gmail,) 
+
+
+Sua representação assume a forma de pares antecedente-consequente ou instruções if-then, Figura 2.18;
+
+
+
+Além de suporte para a lógica fuzzy, o método é diferente em termos de,
+
+\begin{enumerate}
+\item Apenas uma regra fica para fornecer a ação;
+\item Arbitragem necessária para determinar qual regra vencerá
+\end{enumerate}
+
+
+
+
+As vantagens do uso de regras são:
+
+A existência de base teórica.
+Possibilidade de reutilização de regras
+Simplicidade de projeto. 
+Permite a separação das regras do resto do sistema.
+Utilização de plataformas de regras .
+Permite adaptação de sistemas on-the-fly
+Entrega incremental de sistemas
+Explanação do processo de inferência
+Permite gerar conclusões com grau de incerteza (a partir de premissas imprecisas)
+
+
+Algumas desvantagens são :
+
+Desempenho
+Pouco relacionamento entre regras (regras se relacionam através do processo de inferência apenas)
+Podem gerar erros
+Dificuldade de lidar com ambiguidades
+Regras conflitantes
+Base de conhecimento  pode ficar inconsistente e/ou desatualizada
+
+\textbf{Arquitetura de Sistemas Baseados em Regras}
+
+Cinco componentes básicos compreendem um sistema baseado em regras genéricas,
+
+\begin{enumerate}
+
+\item Banco de dados de Matching: 
+
+O banco de dados corresponde ao conjunto de recursos (premissas) que a base de regra usa para estabelecer estados. Os recursos são avaliados periodicamente para quaisquer situação contra o conteúdo das regras expressas no sistema baseado em regras .
+
+\item Regras de Condição (Condition-Action Rules) Uma vez estabelecido o banco de dados de fatos a respeito do status dos dados, a regra de condição será expressa conforme exemplo:
+
+\begin{itemize}
+\item IF (condição 1) AND (condição 2) THEN (ação)
+\end{itemize}
+
+\item Reescrevendo Regras:
+
+Podem existir situações em que uma base de dados é alterada diretamente, sem mais raciocínios, tal comportamento é autônomo e geralmente reflete comportamentos NPC mais reativos.
+Tais casos s ão expressos como regras de reescrita 
+
+\begin{itemize}
+\item IF (condição 1 satisfeita) AND (condição 2 satisfeita) THEN 
+\item remove(ação 1)
+\item add(ação 2 )
+\end{itemize}
+
+\item Encadeamento 
+
+O encadeamento  começa com o conhecimento do objetivo  representado, e em seguida tenta encontrar um caminho mínimo através da base de regras para os estados registrados no banco de dados .
+
+ 
+\item Arbitragem: 
+Geralmente limitar o número de regras para um único caso. Uma das várias heurísticas são geralmente empregadas para esse fim.
+
+\end{enumerate}
+
 
 \subsection{CoCA - Hybrid Approach to Collaborative Context-Aware Service Platform for Pervasive Computing}
 
-CoCA trabalho com...
+CoCA É um middleware baseado em vizinhança, que visa a aquisição e utilização de informações de contexto para fornecer serviços, com um modelo de gerenciamento de contexto híbrido de grande escalabilidade, formalidade e reutilização.
+O Projeto CoCA [citar] apresenta uma plataforma colaborativa serviço conscientes de contexto baseado no modelo de gestão de contexto híbrido. 
+O comportamento das aplicações difundidas não dependem apenas em suas interações estaduais e de usuários internos, mas também na contextos detectado durante a sua execução. Realizando raciocínio e decisões com base em dados de contexto, semântica contexto e as regras e políticas relacionadas. Tais dados são organizados em um modelo de gestão contexto híbrido, chamado HCOM [citar] . Mais tarde, atualizando a ontologia com base em modelo de gestão de contexto genérico surge o, GCOM [citar].
 
-\subsection{HCoM}
+Apoio à decisão é fornecido de forma proativa ou reativa. É fornecido um suporte à decisão e funcionalidade de ação para minimizar a intervenção do usuário.
 
-HCoM é um trabalho..
+IMAGEM Fig.5
+\begin{figure*}[t!]
+\centerline{\includegraphics[scale=.2]{coca.png}}
+\caption{Component view of the Enhanced CoCA platform}
+\label{coca}
+\end{figure*}
+
+%Figura~\ref{coca}
 
 \subsection{WComp, a Middleware for Ubiquitous Computing}
 
-WComp é um abordagem...
+WComp, é um middleware para a computação ubíqua. Esse modelo de Middleware é baseado em três partes distintas: uma infra-estrutura de software,  um serviço de composição da arquitetura e um mecanismo de adaptação.
+
+Para gerenciar o dinamismo e a heterogeneidade das entidades na infra-estrutura de software é utilizado WSOAD ( Web Service Oriented Architecture for Device). As aplicações ubíquas são baseadas em um conjunto de serviços Web para dispositivos. Os serviços não são editáveis, logo para adicionar novas funcionalidades, uma aplicação tem que ser uma composição de serviços para dispositivos.
+
+O WComp utiliza o conceito de Aspectos da Assembléia (AA), baseado em programação orientada a aspectos. Eles definem algumas reconfigurações estruturais de um aplicativo que são acionados em resposta para eventos da infra-estrutura de software. Eventos informam sobre o aparecimento ou desaparecimento de dispositivos da infra-estrutura de software. 
+
+Estas regras são compostas e criadas com uma lógica bem definida, no caso de conflito. Eles são aplicados em conjuntos de componentes que não são necessariamente conhecidas a priori. Várias linguagens e composição de regras podem ser definidas de acordo com o tipo de aplicações nas quais eles serão aplicados.
+
 
 \subsection{SCENE - A Rule-Based Platform for Situation Management}
 
-SCENE trata de...
+Nesse artigo foi proposto uma abordagem para a especificação e realização de detecção de situação para uma aplicação de consciência de situação. Foi implementado uma plataforma baseada em regras para a gestão de situação (SCENE) que aproveita JBoss Drools adicionando funcionalidade para suportar nativamente consciência de situação baseado em regras.
+As regras são definidas no Drools por meio de uma linguagem específica de domínio chamado Drools Rule Language (DRL). A declaração regra DRL compreende uma condição e um bloco de expressão conseqüêntes, respectivamente conhecido como  Left Hand Side (LHS) e Right Hand Side (RHS). A regra especifica que quando o determinado conjunto de condições definidas na LHS ocorre, a lista de ações na RHS deve ser executado. A LHS é composta de elementos condicionais que podem ser combinadas através de operadores lógicos e operadores SET, como  contains e member of. A RHS permite a declaração do código que vai ser executado quando as condições definidas na LHS forem satisfeitas.
+
+Essas características de situações nos levam aos seguintes requisitos básicos para a nossa abordagem de situação:
+Tipos de situação deve ser definida em tempo de design, e situações instanciar esses tipos devem ser detectados em tempo de execução; 
+Tipos de situação deve ser definido com referência a tipos de entidades, bem como restrições sobre propriedades e relações das entidades;
+Propriedades temporais das situações devem ser considerados (tais como o tempo inicial, e, para uma situação passado, o tempo final e duração).
+A fim de atender a estes requisitos, tipos de situação são especificadas no SCENE por meio de aspectos estruturais e comportamentais, que são representados por  Situation Classes e Situation Rules, respectivamente. Cada Situation Class definido pelo usuário é a especialização da classe pré-definida SituationType, que é uma classe abstrata que trata das propriedades temporais da situação e características de composição. A FIGURA X ilustra uma Situation Class, Fever, que extends uma classe SituationType.
+Figura(Situation Classe - fever.png)
+
+Nesse trabalho eles encaram situações como sendo entidades compostas cujos constituintes são outras entidades, suas propriedades e as relações em que estão envolvidos. Como exemplo de situação podemos ter: "John is working", "John has fever", "John has had an intermittent fever for the past 6 months", "John and Paul are outdoors, at a distance of less than 10m from each other", "Bank account number 87346-0 is overdrawn while a suspicious transaction is ongoing", etc.
+
+
+Especificar as situação exige um padrão de regra única seguido de um dialeto de restrição de regras padrão Drools. Situações pode ser composta de restrições sobre domínio de entidades, e além disso, pode ser composto por situações existentes nelas mesma. Nesse trabalho foram abordados aspectos temporais das aplicações, e foi incluído operadores para relacionar situações baseadas em seus aspectos temporais. A detecção é baseada em regras, e é implantado um mecanismo de regras maduro e eficiente e uma complexa tecnologia de processamento de eventos disponíveis para uso. A plataforma gerencia situações através da implementação de situações de controle do ciclo de vida, como a ativação da situação, a manutenção do estado e desativação. Não foi avaliado o desempenho da detecção da situação, mas esta em curso e por experiência em trabalhos anteriores é esperado que o desempenho da detecção de situação seja adequada para a maioria das aplicações. 
+
 
 \subsection{CADEL - Framework and Rule-based Language for Facilitating Context-aware Computing using Information Appliances}
 
-CADEL é...
+Recentemente, computação consciente do contexto, utilizando aparelhos de informação é um dos tópicos de pesquisa mais importantes. Em sistemas de computação consciente do contexto, os dispositivos são controlados automaticamente com base no contexto atual obtido a partir de vários sensores, como posição do usuário, temperatura ambiente e assim por diante. A fim de fazer com que os sistemas sensíveis ao contexto funcionem corretamente, é preciso identificar o contexto atual do ambiente (incluindo usuários) e para recuperar as regras que podem ser executadas no contexto. Como técnicas para descobrir os dispositivos específicos em um ambiente ubíquo. Mesmo com essas técnicas, a fim de fazer vários dispositivos trabalhar cooperativamente com base no contexto, um cenário de como usuário(s) deseja controlar esses dispositivos, deve ser especificado com antecedência. Em um cenário, as regras que consistem em condições de sensores e ações de dispositivos são descritos. Para especificar cada regra corretamente, é necessário escolher com cuidado um conjunto de sensores e dispositivos que o usuário deseja controlar. Assim, os usuários têm que estar familiarizados com as suas funcionalidades. No entanto, seria muito difícil para os usuários em uma casa comum descrever um cenário viável para fazer o sistema funcionar em seus caminhos esperados. Além disso, em um ambiente familiar, vários usuários podem querer controlar o mesmo dispositivo em simultâneo de diferentes maneiras.
+
+Neste trabalho, foi proposto um quadro para permitir que todos possam facilmente descrever cenários para sistemas de computação consciente do contexto, incluindo vários aparelhos de informação e sensores. Nossa estrutura facilita (1) personalização de dispositivos, (2) especificação intuitivo de regras, e (3) verificação de consistência e de conflito detecção em várias regras.
+
+Para os fins acima, em primeiro lugar, foi definido uma linguagem chamada CADEL (Context-Aware Linguagem de descrição de regras) para especificar regras. Desde CADEL tem sintaxe e semântica para linguagens naturais semelhantes, usuários domésticos comuns pode especificar regras de forma intuitiva. Em CADEL, cada usuário pode definir novas palavras (por exemplo, hot-and-entupido) para indicar contextos específicos detectados a partir de vários sensores.
+
+Em segundo lugar, a estrutura oferece uma função de orientação aos usuários durante a descrição da regra, com o qual os usuários podem recuperar os sensores e dispositivos próximos através de GUI e obter as informações, tais como as ações permitidas de um dispositivo e o valor de um sensor. Consequentemente, os usuários podem facilmente especificar uma regra de utilização da informação obtida.
+
+Em terceiro lugar, o quadro fornece um mecanismo para detectar automaticamente um conflito entre várias regras, o que acontece quando as condições de várias regras mantidas ao mesmo tempo e executam ações diferentes para o mesmo dispositivo. A fim de evitar inconsistências devido a um conflito, foi especificado a prioridade entre essas regras conflitantes. Quando uma nova regra é registrada, o quadro verifica se há conflitos de regras com as regras vigentes. Se ele entra em conflito, o quadro solicita aos usuários para especificar a prioridade entre as regras. Os usuários podem anexar um contexto específico para a prioridade de modo que a prioridade só funciona no contexto.
+
+Tem sido implementado um protótipo de sistema do quadro proposto em um PC usando UPnP, que avaliou o desempenho do sistema em termos de tempo de resposta de recuperação do sensor/dispositivo e detecção de conflitos ao longo de várias regras. Através de experimentos, foi confirmamos que a implementação do protótipo alcança um desempenho praticamente suficiente para executar essas operações.
+
 
 %------------------------------------------------------------------------------
 
 \section{Consideraes Finais}
 
-Apresentar as consideraes finais do captulo, apresentar as consideraes finais do captulo, apresentar as consideraes finais, apresentar as consideraes finais do captulo, apresentar as consideraes finais do captulo, apresentar as consideraes finais, apresentar as consideraes finais do captulo, apresentar as consideraes finais do captulo, apresentar as consideraes finais do captulo.
-Apresentar as consideraes finais do captulo, apresentar as consideraes finais do captulo, apresentar as consideraes finais, apresentar as consideraes finais do captulo, apresentar as consideraes finais do captulo, apresentar as consideraes finais, apresentar as consideraes finais do captulo, apresentar as consideraes finais do captulo, apresentar as consideraes finais do captulo.
-Apresentar as consideraes finais do captulo, apresentar as consideraes finais do captulo, apresentar as consideraes finais, apresentar as consideraes finais do captulo, apresentar as consideraes finais do captulo, apresentar as consideraes finais, apresentar as consideraes finais do captulo, apresentar as consideraes finais do captulo, apresentar as consideraes finais do captulo.
-Apresentar as consideraes finais do captulo, apresentar as consideraes finais do captulo, apresentar as consideraes finais, apresentar as consideraes finais do captulo, apresentar as consideraes finais do captulo, apresentar as consideraes finais, apresentar as consideraes finais do captulo, apresentar as consideraes finais do captulo, apresentar as consideraes finais do captulo.
+Apresentar as considerações finais do capítulo.
 
 %------------------------------------------------------------------------------
 
