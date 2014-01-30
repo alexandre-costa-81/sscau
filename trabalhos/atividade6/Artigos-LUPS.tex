@@ -1,3 +1,7 @@
+%------------------------------------------------------------------------------
+% Template dos artigos da Revista LUPS
+%------------------------------------------------------------------------------
+
 \documentclass[12pt,a4paper,compsoc]{IEEEtran}
 \usepackage[utf8]{inputenc}
 \usepackage[brazilian]{babel}
@@ -9,10 +13,6 @@
 \usepackage[T1]{fontenc} 
 \usepackage{ae}
 \usepackage{cite}
-
-%------------------------------------------------------------------------------
-% Template dos artigos da Revista LUPS
-%------------------------------------------------------------------------------
 
 %------------------------------------------------------------------------------
 
@@ -28,9 +28,9 @@
 
 % Ttulo e autores do artigo
 
-\title{Template em LATEX para os artigos da revista LUPS}
+\title{Explorando Regras para Consciência de Situação em Ubicomp}
 
-\author{Nome Autor 1, UFPel; Nome Autor 2, UFPel
+\author{Caue Duarte, UFPel; Alexandre Gomes da Costa, UFPel
 
 \IEEEcompsocitemizethanks{\IEEEcompsocthanksitem \textbf{Caue Duarte}: Programa de Pós-Graduao em Computação,  Universidade Federal de Pelotas - UFPel, Centro de Desenvolvimento Tecnológigo - CDTec.
 % Para uma quebra de linha, deve-se utilizar o \protect antes do \\, caso contrrio vai dar erro.
@@ -41,67 +41,125 @@
 \protect\\ E-mail: alexandre.costa@inf.ufpel.edu.br}
 }
 
-%------------------------------------------------------------------------------
-
+%--------------------------------------------------------------------------------------------------
+% ABSTRACT
+%--------------------------------------------------------------------------------------------------
 \IEEEcompsoctitleabstractindextext{%
 \begin{abstract}
-%Resumo não é uma introdução ao artigo, mas sim uma descrição sumária da sua totalidade, na qual se procura realar os aspectos mencionados. Deve ser discursivo, e não apenas uma lista dos tópicos que o artigo cobre. Deve-se entrar na essência do resumo logo na primeira frase, sem rodeios introdutrios nem recorrendo à fórmula estafada "Neste artigo...". Este deve ser escrito em um parágrafo único e conter entre 120 e 180 palavras. Devem-se evitar em um resumo: (i) Smbolos e contrações que no sejam de uso corrente; (ii) Fórmulas, equações, diagramas etc., que no sejam absolutamente necessários. Não citar referências bibliográficas no resumo. Logo após o resumo devem vir as palavras-chave, que são palavras representativas do conteúdo do documento. As palavras-chave devem ser separadas entre si por vírgula e finalizadas por ponto. No mínimo 3 e no máximo 5 palavras.
+  Técnicas de Consciência de Situação são amplamente utilizadas por diversas áreas dentro das
+  Ciências da Computação, normalmente ligadas a consequência dos estudos em consciência de
+  contexto, com o diferencial possuir raciocínio agregado. Nesse contexto, buscamos no presente
+  trabalho definir principais conceitos referentes a computação ubíqua e consciência de situação
+  além de explorar o emprego de sistemas baseados em regras para prover esse raciocínio, explorando
+  o emprego de regras em trabalhos de grande porte em computação ubíqua.
 \end{abstract}
 
 \begin{IEEEkeywords}
-Palavra-chave 1, Palavra-chave 2, Palavra-chave 3, Palavra-chave 4.
+Consciência de Situação, Sistemas baseados em regras, Ubicomp, Computação Pervasiva.
 \end{IEEEkeywords}}
 
 \maketitle
 
-%------------------------------------------------------------------------------
-
-
+%--------------------------------------------------------------------------------------------------
+% INTRODUÇÃO
+%--------------------------------------------------------------------------------------------------
 \section{Introdução}
 
+  \IEEEPARstart{C}{}om o crescente número de dispositivos móveis e o aumento significativo de seu
+  poder de processamento e largura de banda, o paradigma da computação ubíqua proposta por Weiser,
+  que previa um aumento nas funcionalidades e na disponibilidade de serviços de computação para os
+  usuários finais com um custo de gerenciamento ficando cada vez menor, torna-se cada vez mais
+  viável.
+  
+  Técnicas de Consciência de Situação são amplamente utilizadas por diversas áreas dentro da
+  Ciência da Computação, incluindo a Computação Ubíqua. Normalmente ligadas a consequência dos
+  estudos em consciência de contexto, com o diferencial possuir raciocínio agregado.
+  
+  Este trabalho explora o uso de Sistemas Baseados em Regras para prover Consciência de Situação.
+  Regras podem ser uma generalização geralmente válida, um princípio regulador, um método para a
+  realização de uma determinada operação matemática e obter um certo resultado.
+  
+  Foram analisados os seguintes projetos Collaborative Context-Aware Service Platform for Pervasive
+  Computing (CoCA), WComp, a Middleware for Ubiquitous Computing (WComp), A Rule-Based Platform for
+  Situation Management (SCENE) e por fim Framework and Rule- based Language for Facilitating 
+  Context-aware Computing using Information Appliances - (Context-Aware rule Description Language -
+  CADEL).
+  
+  O objetivo deste trabalho é apresentar conceitos relacionados a Computação Ubíqua, Consciência de
+  Situação, Sistemas Baseados em Regras além de explorar o uso de Regras para prover o raciocínio
+  utilizado em Consciência de Situação.
+  
+  O artigo é descrito como segue: na seção 2 são apresentados conceitos de Computação Ubíqua. A
+  seção 3 apresenta um breve resumo de Conciência de Situação. A seção 4 introduz conceitos de
+  Sistemas Baseados em Regras e mostra sua utilização em projetos relacionados e finalmente na
+  seção 5 são apresentadas as conclusões do trabalho.
 
-\IEEEPARstart{T}{}écnicas de Consciência de Situação são amplamente utilizadas por diversas áreas dentro das Ciências da Computação, normalmente ligadas a consequência dos estudos em consciecência de contexto, com o diferencial possuir raciocínio agregado. 
-Nesse contexto, buscamos no presente trabalho definir principais conceitos referentes a computação ubíqua e consciência de situação além de explorar o emprego de sistemas baseados em regras para prover esse raciocínio, em alguns trabalhos relacionados.
-Foram analisados os seguintes projetos Collaborative Context-Aware Service Platform for Pervasive Computing (CoCA), WComp, a Middleware for Ubiquitous Computing (WComp), A Rule-Based Platform for Situation Management (SCENE) e por fim Framework and Rule-based Language for Facilitating Context-aware Computing using Information Appliances - (Context-Aware rule Description Language - CADEL).
 
-%------------------------------------------------------------------------------
-
+%--------------------------------------------------------------------------------------------------
+% COMPUTAÇÃO UBÍQUA
+%--------------------------------------------------------------------------------------------------
 \section{Computação Ubíqua}
 
-
-O nome Ubíquo vem do Latim \textit{ubiquu}, que significa estar em todos os locais.    
-Mark Weiser, então cientista do Centro de Pesquisa da Xerox, definiu em seu artigo intitulado  \textit{The Computer for the 21st Century} o termo Computação Ubíqua como sendo a presença direta e constante de serviços de computação na vida dos usuários finais, dividindo a computação entre diversos dispositivos conectados entre si.
-O desafio dos cientistas é tornar real o pensamento de Weiser, e consequentemente a ubiquidade na computação, fazendo com que as interfaces se tornem transparentes, armazenem informações e aprendam apartir dessas informações. Compartilhar dados, informações de forma mais fácil e transparente, esta tecnologia fará parte do processo de evolução do ser humano, onde ca vez mais a computação centralizada deixar de ser o único agente que o usuário interage e multiplicar-se para usos especializados.
-A Computação Ubíqua,  não se resume apenas pela computação, seu objetivo é integrar totalmente a relação computação/periféricos com o usuário tornando-se  invisível, no sentido de a utilizar sem perceber.
-A computação, embarcada nos mais diversos computadores, já faz parte da vida das pessoas em maior ou menor grau e essa interação juntamente com o número da computadores tente a aumentar, tornando-se onipresente na vida do usuário. Para tornar isso possível, busca-se a utilização de interfaces naturais, tornando a comunicação com esses dispositivos mais transparente, interagindo com o usuário por meio de gestos, fala e visão, por exmeplo.
-Outra forma de interação é através da computação sensível ao contexto, que através do processamento de dados oriundos dos mais diversos sensores, percebe e interage com a realidade do ambiente como por exemplo a movimentação do usuário através de um ambiente monitorado.    
-O computador, presente nos mais diversos dispositivos (smartphones, tablets, etc..), possui interfaces de comunicação, e como todas interfaces já consolidadas, tende a se tornar imperceptivel, uma extensão dos sentidos humanos. Como exemplo de interfaces podemos citar um óculos ou uma bengala, que pelo uso contínuo, o usuário abstrai o utensilio em si, utilizando-o de forma transparente, focando apenas na realidade trazida pelo mesmo. Sob esta premissa, o uso das interfaces passa a tornar-se inconsciente~\cite{Weiser93}.
-Nesse contexto as aplicações precisam “entender” e se ajustar ao ambiente, através do processamento de informações sobre o contexto em que estão inseridas ~\cite{Maciel}.
-Essa nova classe de sistemas computacionais, conscientes ao contexto, abre perspectivas para o desenvolvimento de aplicações muito mais ricas, elaboradas e complexas, que exploram a natureza dinâmica e a mobilidade do usuário. Um desafio central na programação deste tipo de aplicação é possibilitar que as mesmas se adaptem continuamente ao ambiente e permaneçam funcionando mesmo quando o indivíduo se movimentar ou trocar de dispositivo ~\cite{GrimmB03, Cac08}.
-A Computação Ubíqua é entendida como o terceiro grande paradigma computacional, precedido pelos \textit{mainframes} e pela computação pessoal ~\cite{Weiser97}. Com foco em demandas institucionais, hoje atende demandas específicas, os \textit{mainframes}, computadores de grande porte, atendem requisições de inúmeros usuários. Já com a computação pessoal, observamos uma convergência das máquinas para uso pessoal.
-Visualizamos a computação ubíqua como uma rede invisível que permeia o usuário com dispositivos inteligentes e que se intercomunicam, aprendem uns com os outros, com o ambiente e tomam decisões. Os recusos computacionais devem estar disponíveis ao usuário, promovendo adaptações dinâmicas tanto dos serviços quanto aplicações satisfazendo as necessidades do usuário, de maneira mais transparente possível. Considerando esta perspectiva, a Computação Ubíqua constitui um ambiente altamente distribuído, heterogêneo, dinâmico, móvel, mutável e com forte interação entre homem e máquina ~\cite{Augustin03}.        
-Um caminho breve para a Computação Ubíqua é a imersão total do usuário nessa rede invisível, não só de computadores, \textit{smartphones}, \textit{tablets}, mas de dispositivos comuns, até então não associados com computação, como eletrodomésticos ao exemplo das já consolidadas \textit{smartv's}, além de outros tantos como mesas, talheres e até ambientes inteiros. Através de estratégias de \textit{cloud computing} (computação em nuvem) interligando esses dispositivos por rede, internet, \textit{bluetooth} podem trocar dados, processar informações e executar qualquer ação que possa ser interessante do ponto de vista do usuário ou sistema.
-
-
-%O termo Computação Ubíqua foi introduzido pelo cientista Mark Weiser, que no início dos anos 90, já previa um aumento nas funcionalidades e na disponibilidade de serviços de computação para os usuários finais, entretanto com a visibilidade destes serviços sendo a menor possível. Deste modo, a computação no seria exclusividade de um computador, mas de diversos dispositivos conectados entre si.
-
-%O termo Computação Ubíqua foi usado pela primeira vez no artigo “The Computer for the 21st Century” do cientista Mark Weiser em 1991. Neste artigo ele previa um aumento nas funcionalidades e na disponibilidade de serviços computacionais por parte dos usuários, porem com a possibilidade da transparência bem reduzida. Com isso, a lógica computacional não seria apenas de computadores, mas também de outros dispositivos que estão interconectados.
-
-%A Computação Ubíqua, nesta perspectiva, não significa um computador que possa ser transportado para diferentes lugares. Mesmo o mais funcional notebook, com acesso a Internet ainda foca a atenção do usuário num único equipamento. Comparando  escrita, carregar este poderoso notebook  como carregar um livro muito importante. Por mais significativo que seja este livro, no significa capturar o real poder da Literatura (WEISER, 1991).
-
-%Dessa forma Computação Ubíqua tem por objetivo fazer com que a interação com o computador passe a ser invisível. Ou seja, deixar o dispositivo computacional tão integrado que ele seja praticamente invisível, do mesmo modo que um motorista não enxerga todo o processo de realizar uma marcha quando ele troca de uma marcha para outra.
-
-%Uma analogia oportuna seria o surgimento da escrita moderna. Conhecimento que durante muito tempo foi acessível exclusivamente aos mais conceituados especialistas das letras, hoje está integralmente imerso em nosso cotidiano e imperceptivelmente, constituindo uma tecnologia consumida em larga escala.
-%A concretização do pensamento de Weiser, e consequentemente a ubiquidade da informática, ter atingido sua plenitude quando a computação for aplicada com a mesma naturalidade que hoje  utilizada a língua escrita e os motores, agora elétricos e embarcados, para realização de atividades do cotidiano, ou seja, a comunidade ter alcançado a era da computação ubíqua quando o computador deixar de ser peça única e de uso genérico e multiplicar-se para usos especializados.
-%O computador uma interface de comunicação e, como todas as interfaces consolidadas, ele tende a ser imperceptível. Por exemplo, os óculos são uma interface entre o ser humano e o mundo mas, o ser humano não concentra suas atenções no óculos, mas no mundo. Uma pessoa cega, ao utilizar sua bengala, percebe o mundo ao seu redor, e no a bengala. Sob esta premissa, o uso das interfaces passa a tornar-se inconsciente (WEISER, 1993).
-%A Computação Ubíqua entendida como sendo o terceiro grande paradigma computacional, precedido pelo império dos mainframes e pela onda da computação pessoal (WEISER; BROWN, 1997). Com foco em demandas administrativas no passado e hoje presente em cenários específicos, os computadores de grande porte foram concebidos sobre uma arquitetura onde, poucas máquinas de imenso poder de processamento, são compartilhadas simultaneamente por inúmeros usuários. Com o domínio dos microcomputadores, observamos a máquina como peça de uso pessoal e exclusivo. Por fim, na Computação Ubíqua, veremos a tecnologia formando uma malha de dispositivos inteligentes em torno de cada indivíduo.
-%As aplicações ubíquas, em uma visão mais ampla, devem prever a mobilidade de equipamentos e usuários, denominada mobilidade física, e também dos componentes da aplicação e serviços, chamada de mobilidade lógica. Para isso, as aplicações devem ter o estilo siga-me, facultando que o usuário possa acessar seu ambiente computacional independente da localização, do tempo e do dispositivo utilizado (YAMIN, 2004).
-%Para tal, as aplicações precisam "entender" e se adaptar ao ambiente, compreendendo o contexto em que esto inseridas (MACIEL; ASSIS, 2004). Essa nova classe de sistemas computacionais, conscientes ao contexto, abre perspectivas para o desenvolvimento de aplicações muito mais ricas, elaboradas e complexas, que exploram a natureza dinâmica e a mobilidade do usuário. Um desafio central na programação deste tipo de aplicação  possibilitar que as mesmas se adaptem continuamente ao ambiente e permaneçam funcionando mesmo quando o indivíduo se movimentar ou trocar de dispositivo (GRIMM; BERSHAD, 2003; COSTA; YAMIN; GEYER, 2008).
-%A Computação Ubíqua considerando esta perspectiva, constitui um ambiente altamente distribuído, heterogêneo, dinâmico, móvel, mutável e com forte interação entre homem e máquina (AUGUSTIN, 2003). Neste contexto, o usuário desloca-se e comunica-se com os recursos computacionais do ambiente em que se encontra, promovendo adaptação dinâmica dos serviços e aplicações, de tal forma que as suas necessidades sejam satisfeitas, da maneira mais natural e transparente possíveis.
-
-
-
-
+  O nome Ubíquo vem do Latim \textit{ubiquu}, que significa estar em todos os locais. Mark Weiser,
+  então cientista do Centro de Pesquisa da Xerox, definiu em seu artigo intitulado  \textit{The
+  Computer for the 21st Century} o termo Computação Ubíqua como sendo a presença direta e constante
+  de serviços de computação na vida dos usuários finais, dividindo a computação entre diversos
+  dispositivos conectados entre si. O desafio dos cientistas é tornar real o pensamento de Weiser,
+  e consequentemente a ubiquidade na computação, fazendo com que as interfaces se tornem
+  transparentes, armazenem informações e aprendam apartir dessas informações. Compartilhar dados,
+  informações de forma mais fácil e transparente, esta tecnologia fará parte do processo de
+  evolução do ser humano, onde ca vez mais a computação centralizada deixar de ser o único agente
+  que o usuário interage e multiplicar-se para usos especializados. A Computação Ubíqua,  não se
+  resume apenas pela computação, seu objetivo é integrar totalmente a relação
+  computação/periféricos com o usuário tornando-se  invisível, no sentido de a utilizar sem 
+  perceber.
+  
+  A computação, embarcada nos mais diversos computadores, já faz parte da vida das pessoas em maior
+  ou menor grau e essa interação juntamente com o número da computadores tente a aumentar,
+  tornando-se onipresente na vida do usuário. Para tornar isso possível, busca-se a utilização de
+  interfaces naturais, tornando a comunicação com esses dispositivos mais transparente, interagindo
+  com o usuário por meio de gestos, fala e visão, por exmeplo.
+  
+  Outra forma de interação é através da computação sensível ao contexto, que através do 
+  processamento de dados oriundos dos mais diversos sensores, percebe e interage com a realidade do
+  ambiente como por exemplo a movimentação do usuário através de um ambiente monitorado.
+  O computador, presente nos mais diversos dispositivos (smartphones, tablets, etc..), possui 
+  interfaces de comunicação, e como todas interfaces já consolidadas, tende a se tornar 
+  imperceptivel, uma extensão dos sentidos humanos. Como exemplo de interfaces podemos citar um
+  óculos ou uma bengala, que pelo uso contínuo, o usuário abstrai o utensilio em si, utilizando-o
+  de forma transparente, focando apenas na realidade trazida pelo mesmo. Sob esta premissa, o uso
+  das interfaces passa a tornar-se inconsciente~\cite{weiser1993}. Nesse contexto as aplicações 
+  precisam ``entender'' e se ajustar ao ambiente, através do processamento de informações sobre o
+  contexto em que estão inseridas ~\cite{maciel2004}.
+  
+  Essa nova classe de sistemas computacionais, conscientes ao contexto, abre perspectivas para o
+  desenvolvimento de aplicações muito mais ricas, elaboradas e complexas, que exploram a natureza
+  dinâmica e a mobilidade do usuário. Um desafio central na programação deste tipo de aplicação é
+  possibilitar que as mesmas se adaptem continuamente ao ambiente e permaneçam funcionando mesmo
+  quando o indivíduo se movimentar ou trocar de dispositivo ~\cite{GrimmB03, Cac08}.
+  
+  A Computação Ubíqua é entendida como o terceiro grande paradigma computacional, precedido pelos
+  \textit{mainframes} e pela computação pessoal ~\cite{weiser1997}. Com foco em demandas 
+  institucionais, hoje atende demandas específicas, os \textit{mainframes}, computadores de grande
+  porte, atendem requisições de inúmeros usuários. Já com a computação pessoal, observamos uma
+  convergência das máquinas para uso pessoal.
+  
+  Visualizamos a computação ubíqua como uma rede invisível que permeia o usuário com dispositivos
+  inteligentes e que se intercomunicam, aprendem uns com os outros, com o ambiente e tomam
+  decisões. Os recusos computacionais devem estar disponíveis ao usuário, promovendo adaptações
+  dinâmicas tanto dos serviços quanto aplicações satisfazendo as necessidades do usuário, de 
+  maneira mais transparente possível. Considerando esta perspectiva, a Computação Ubíqua constitui
+  um ambiente altamente distribuído, heterogêneo, dinâmico, móvel, mutável e com forte interação
+  entre homem e máquina ~\cite{Augustin03}.
+  
+  Um caminho breve para a Computação Ubíqua é a imersão total do usuário nessa rede invisível, não
+  só de computadores, \textit{smartphones}, \textit{tablets}, mas de dispositivos comuns, até então
+  não associados com computação, como eletrodomésticos ao exemplo das já consolidadas 
+  \textit{smartv's}, além de outros tantos como mesas, talheres e até ambientes inteiros. Através
+  de estratégias de \textit{cloud computing} (computação em nuvem) interligando esses dispositivos
+  por rede, internet, \textit{bluetooth} podem trocar dados, processar informações e executar
+  qualquer ação que possa ser interessante do ponto de vista do usuário ou sistema.
+  
 
 %------------------------------------------------------------------------------
 
@@ -223,11 +281,11 @@ O comportamento das aplicações difundidas não dependem apenas em suas intera�
 Apoio à decisão é fornecido de forma proativa ou reativa. É fornecido um suporte à decisão e funcionalidade de ação para minimizar a intervenção do usuário.
 
 IMAGEM Fig.5
-\begin{figure*}[t!]
-\centerline{\includegraphics[scale=.2]{coca.png}}
-\caption{Component view of the Enhanced CoCA platform}
-\label{coca}
-\end{figure*}
+%\begin{figure*}[t!]
+%\centerline{\includegraphics[scale=.2]{coca.png}}
+%\caption{Component view of the Enhanced CoCA platform}
+%\label{coca}
+%\end{figure*}
 
 %Figura~\ref{coca}
 
