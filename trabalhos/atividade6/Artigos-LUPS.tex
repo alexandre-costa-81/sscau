@@ -173,11 +173,22 @@ Consciência de Situação, Sistemas baseados em regras, Ubicomp, Computação P
 %--------------------------------------------------------------------------------------------------
 \section{Consciência de Situação}
 
+  % Consciência de Situação - Pirâmide
+  % Para referenciar a figura ~\ref{cs-piramide}
+  \begin{figure}[ht]
+  \centerline{\includegraphics[scale=.20]{imagens/consciencia-de-situacao-piramide}}
+  \caption{Consciência de Situação - Pirâmide \cite{almeida2013}}
+  \label{cs-piramide}
+  \end{figure}
+
   Consciência de situação é definida como uma interpretação semântica externa dos dados do sensor,
   na área de Computação Ubíqua, \cite{anagnostopoulos2006} define situação como uma 
   particularização da consciência de contexto, onde situações são vistas como contextos logicamente
   ligados.
   
+  Então podemos identificar uma pirâmide Fig. \ref{cs-piramide}, onde sensores coletam dados para
+  compor contextos e posteriormente serem analisados para identificar possiveis situações.
+
   Outra definição é que situação consiste de um conjunto de elementos contextuais de interesse 
   instanciados relacionados de forma a prover alguma informação válida em um intervalo de tempo 
   específico, rotulando-os com um nome descritivo. O nome descritivo é uma definição humana de um 
@@ -193,20 +204,20 @@ Consciência de Situação, Sistemas baseados em regras, Ubicomp, Computação P
   levadas em consideração para identificação da situação, sendo que em algumas situações a 
   relevância das perguntas pode mudar.
   
-  % Consciência de Situação - Pirâmide
-  % Para referenciar a figura ~\ref{cs-piramide}
-  \begin{figure*}[t!]
-    \centerline{\includegraphics[scale=.2]{imagens/consciencia-de-situacao-piramide}}
-    \caption{Consciência de Situação - Pirâmide \cite{almeida2013}}
-    \label{cs-piramide}
+  Conforme a definição de situação apresentada no modelo de Endsley na figura \ref{modelo-endsley} a
+  seguir, é introduzida a definição de consciência de situação. Para melhor entendimento do trabalho
+  optamos pela seguinte definição de situação: Consciência de situação consiste da percepção e
+  compreensão de uma ou mais situações e a projeção de seus efeitos em um futuro próximo
+  \cite{endsley1995}. Endsley apresenta três níveis para obtenção de consciência de situação:
+  percepção, compreensão e projeção.
+
+  % Modelo de Endsley
+  % Para referenciar a figura ~\ref{modelo-endsley}
+  \begin{figure*}[ht]
+    \centerline{\includegraphics[scale=.35]{imagens/modelo-endsley}}
+    \caption{Modelo de Endsley \cite{endsley1995}}
+    \label{modelo-endsley}
   \end{figure*}
-  
-  Conforme a definição de situação apresentada, apresentada na figura xxx a seguir, é introduzida a
-  definição de consciência de situação. Para melhor entendimento do trabalho optamos pela seguinte
-  definição de situação: Consciência de situação consiste da percepção e compreensão de uma ou mais
-  situações e a projeção de seus efeitos em um futuro próximo (ENDSLEY, 1995). Endsley apresenta
-  três níveis para obtenção de consciência de situação: percepção, compreensão e projeção.
-  
 
 \subsection{Percepção}
 
@@ -283,7 +294,7 @@ Consciência de Situação, Sistemas baseados em regras, Ubicomp, Computação P
   nos anos 70 e 80.
   
   Regras podem ser  uma generalização geralmente válida, um princípio regulador, um método para a
-  realização de uma determinada  operação matemática e obter um certo resultado. Exemplos do uso de
+  realização de uma determinada operação matemática e obter um certo resultado. Exemplos do uso de
   regras:
   
   \textbf{Regras em sistemas especialistas}
@@ -314,8 +325,8 @@ Consciência de Situação, Sistemas baseados em regras, Ubicomp, Computação P
 
   % Imagem da tela de configuração do Cobalto
   % Para referenciar a figura ~\ref{config-cobalto}
-  \begin{figure*}[t!]
-    \centerline{\includegraphics[scale=.2]{imagens/config-cobalto}}
+  \begin{figure*}[ht]
+    \centerline{\includegraphics[scale=.35]{imagens/config-cobalto}}
     \caption{Imagem da tela de configuração do Cobalto}
     \label{config-cobalto}
   \end{figure*}
@@ -412,20 +423,20 @@ Consciência de Situação, Sistemas baseados em regras, Ubicomp, Computação P
   O comportamento das aplicações difundidas não dependem apenas em suas interações estaduais e de
   usuários internos, mas também na contextos detectado durante a sua execução. Realizando 
   raciocínio e decisões com base em dados de contexto, semântica contexto e as regras e políticas
-  relacionadas. Tais dados são organizados em um modelo de gestão contexto híbrido, chamado HCOM
-  \cite{ejigu2008hybrid}. Mais tarde, atualizando a ontologia com base em modelo de gestão de 
-  contexto genérico surge o, GCOM \cite{ejigu2008hybrid}.
-  
-  Apoio à decisão é fornecido de forma proativa ou reativa. É fornecido um suporte à decisão e 
-  funcionalidade de ação para minimizar a intervenção do usuário.
+  relacionadas, conforme Figura \ref{arquitetura-coca}. Tais dados são organizados em um modelo de
+  gestão contexto híbrido, chamado HCOM \cite{ejigu2008hybrid}. Mais tarde, atualizando a ontologia
+  com base em modelo de gestão de contexto genérico surge o, GCOM \cite{ejigu2008hybrid}.
 
   % Arquitetura da plataforma CoCA
   % Referencia da figura ~\ref{arquitetura-coca}
-  \begin{figure*}[t!]
-    \centerline{\includegraphics[scale=.2]{imagens/arquitetura-coca}}
+  \begin{figure}[ht]
+    \centerline{\includegraphics[scale=.15]{imagens/arquitetura-coca}}
     \caption{Arquitetura da plataforma CoCA \cite{ejigu2008hybrid}}
     \label{arquitetura-coca}
-  \end{figure*}
+  \end{figure}
+  
+  Apoio à decisão é fornecido de forma proativa ou reativa. É fornecido um suporte à decisão e 
+  funcionalidade de ação para minimizar a intervenção do usuário.
 
 
 \subsection{WComp, a Middleware for Ubiquitous Computing}
@@ -482,24 +493,24 @@ Consciência de Situação, Sistemas baseados em regras, Ubicomp, Computação P
   aspectos estruturais e comportamentais, que são representados por  \textit{Situation Classes} e
   \textit{Situation Rules}, respectivamente. Cada \textit{Situation Class} definido pelo usuário é
   a especialização da classe pré-definida \textit{SituationType}, que é uma classe abstrata que
-  trata das propriedades temporais da situação e características de composição. A Figura
-  \ref{situation-classe-fever} ilustra uma \textit{Situation Class}, \textit{Fever}, que extends
-  uma classe \textit{SituationType}.
+  trata das propriedades temporais da situação e características de composição.
+  A Figura\ref{situation-classe-fever} ilustra uma \textit{Situation Class}, \textit{Fever}, que
+  extends uma classe \textit{SituationType}.
   
-  % Arquitetura da plataforma CoCA
+  % Situation Class} - textit{Fever}
   % Referencia da figura ~\ref{situation-classe-fever}
-  \begin{figure*}[t!]
-    \centerline{\includegraphics[scale=.2]{imagens/situation-classe-fever}}
-    \caption{\textit{Situation Class} - textit{Fever} \cite{pereira2013rule}}
-    \label{situation-classe-fever}
-  \end{figure*}
+  \begin{figure}[ht]
+  \centerline{\includegraphics[scale=.20]{imagens/situation-classe-fever}}
+  \caption{\textit{Situation Class} - textit{Fever} \cite{pereira2013rule}}
+  \label{situation-classe-fever}
+  \end{figure}
 
   Nesse trabalho eles encaram situações como sendo entidades compostas cujos constituintes são
   outras entidades, suas propriedades e as relações em que estão envolvidos. Como exemplo de
-  situação podemos ter: ``textit{John is working}'', ``textit{John has fever}'', 
-  ``textit{John has had an intermittent fever for the past 6 months}'', 
-  ``textit{John and Paul are outdoors, at a distance of less than 10m from each other}'',
-  ``textit{Bank account number 87346-0 is overdrawn while a suspicious transaction is ongoing}'',
+  situação podemos ter: ``\textit{John is working}'', ``\textit{John has fever}'', 
+  ``\textit{John has had an intermittent fever for the past 6 months}'', 
+  ``\textit{John and Paul are outdoors, at a distance of less than 10m from each other}'',
+  ``\textit{Bank account number 87346-0 is overdrawn while a suspicious transaction is ongoing}'',
   etc.
 
   Especificar as situação exige um padrão de regra única seguido de um dialeto de restrição de
