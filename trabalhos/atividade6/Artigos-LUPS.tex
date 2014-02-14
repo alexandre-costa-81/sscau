@@ -36,15 +36,17 @@
 
 \author{Caue Duarte, UFPel; Alexandre Gomes da Costa, UFPel
 
-\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem \textbf{Caue Duarte}: Programa de Pós-Graduao em
- Computação,  Universidade Federal de Pelotas - UFPel, Centro de Desenvolvimento Tecnológigo -
- CDTec.
-% Para uma quebra de linha, deve-se utilizar o \protect antes do \\, caso contrrio vai dar erro.
+\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem \textbf{Caue Duarte}: Programa de
+Pós-Graduao em Computação,  Universidade Federal de Pelotas - UFPel, Centro de
+Desenvolvimento Tecnológigo - CDTec.
+% Para uma quebra de linha, deve-se utilizar o \protect antes do \\, caso contrrio vai
+% dar erro.
 \protect\\ E-mail: e-mailautor1@inf.ufpel.edu.br}
 
 % No caso de mais autores, basta repetir:
-\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem \textbf{Alexandre Gomes da Costa}: Programa de
- Pós-Graduao em Computação,  Universidade Federal de Pelotas - UFPel, Centro de Desenvolvimento
+\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem \textbf{Alexandre Gomes da Costa}:
+ Programa de Pós-Graduao em Computação,  Universidade Federal de Pelotas - UFPel, Centro
+de Desenvolvimento
  Tecnológigo - CDTec.
 \protect\\ E-mail: alexandre.costa@inf.ufpel.edu.br}
 }
@@ -54,16 +56,15 @@
 %--------------------------------------------------------------------------------------------------
 \IEEEcompsoctitleabstractindextext{%
 \begin{abstract}
-  Técnicas de Consciência de Situação são amplamente utilizadas por diversas áreas dentro das
-  Ciências da Computação, normalmente ligadas a consequência dos estudos em consciência de
-  contexto, com o diferencial possuir raciocínio agregado. Nesse contexto, buscamos no presente
-  trabalho definir principais conceitos referentes a computação ubíqua e consciência de situação
-  além de explorar o emprego de sistemas baseados em regras para prover esse raciocínio, explorando
-  o emprego de regras em trabalhos de grande porte em computação ubíqua.
+  Atingir consciência de situação é um grande desafio de pesquisa na área de Ubicomp, pois
+  aplicações necessitam das informações contextuais para adaptar seu funcionamento. O trabalho
+  apresenta um estudo sobre o uso de regras para prover consciência de situação, além de
+  introduzir alguns dos principais conceitos referentes a computação ubíqua e consciência de
+  situação, explorando o seu emprego em sistemas de grande porte em computação ubíqua.
 \end{abstract}
 
 \begin{IEEEkeywords}
-Consciência de Situação, Sistemas baseados em regras, Ubicomp, Computação Pervasiva.
+Consciência de Situação, Sistemas baseados em regras, Ubicomp, Computação Ubíqua.
 \end{IEEEkeywords}}
 
 \maketitle
@@ -73,28 +74,31 @@ Consciência de Situação, Sistemas baseados em regras, Ubicomp, Computação P
 %--------------------------------------------------------------------------------------------------
 \section{Introduç\~ao}
   \IEEEPARstart{C}{}om o crescente número de dispositivos móveis e o aumento significativo de seu
-  poder de processamento e largura de banda, o paradigma da computação ubíqua proposta por Weiser,
-  que previa um aumento nas funcionalidades e na disponibilidade de serviços de computação para os
-  usuários finais com um custo de gerenciamento ficando cada vez menor, torna-se cada vez mais
-  viável.
+  poder de processamento e largura de banda, materializa-se a visão da computação ubíqua proposta
+  por Weiser, onde as tecnologias mais profundas são aquelas que desaparecem, elas se integram na
+  vida cotidiana até se tornarem indistinguíveis da mesma \cite{weiser1991}. Visão essa que previa
+  um aumento nas funcionalidades e na disponibilidade de serviços de computação para os usuários
+  finais com um custo de gerenciamento ficando cada vez menor, torna-se cada vez mais viável.
   
-  Técnicas de Consciência de Situação são amplamente utilizadas por diversas áreas dentro da
-  Ciência da Computação, incluindo a Computação Ubíqua. Normalmente ligadas a consequência dos
-  estudos em consciência de contexto, com o diferencial possuir raciocínio agregado.
+  Na Computação Ubíqua as aplicações, quando necessário, podem adaptar seu comportamento a uma nova
+  situação. Nesse sentido, a consciência de situação pode ser considerada como uma particularização
+  da consciência de contexto, diferenciando-se por agregar um processo de raciocínio sobre as 
+  informações contextuais.
+
+  Consciência de Situação é definida como uma particularização da consciência de contexto, onde
+  situações são vistas como contextos logicamente ligados \cite{anagnostopoulos2006}. Técnicas de
+  Consciência de Situação são amplamente utilizadas por diversas áreas dentro da Ciência da
+  Computação, incluindo a Computação Ubíqua. Normalmente ligadas a consequência dos estudos em
+  consciência de contexto, com o diferencial possuir raciocínio agregado.
   
-  Este trabalho explora o uso de Sistemas Baseados em Regras para prover Consciência de Situação.
-  Regras podem ser uma generalização geralmente válida, um princípio regulador, um método para a
-  realização de uma determinada operação matemática e obter um certo resultado.
-  
-  Foram analisados os seguintes projetos Collaborative Context-Aware Service Platform for Pervasive
-  Computing (CoCA), WComp, a Middleware for Ubiquitous Computing (WComp), A Rule-Based Platform for
-  Situation Management (SCENE) e por fim Framework and Rule- based Language for Facilitating 
-  Context-aware Computing using Information Appliances - (Context-Aware rule Description Language -
-  CADEL).
+  Este trabalho tem como tema central o uso de Sistemas Baseados em Regras para prover Consciência
+  de Situação. Regras podem ser uma generalização usualmente válida, um princípio regulador, um
+  método para a realização de uma determinada operação matemática e obter um certo resultado.
   
   O objetivo deste trabalho é apresentar conceitos relacionados a Computação Ubíqua, Consciência de
-  Situação, Sistemas Baseados em Regras além de explorar o uso de Regras para prover o raciocínio
-  utilizado em Consciência de Situação.
+  Situação, Sistemas Baseados em Regras além de explorar o uso de Regras para provimento de
+  consciência de situação, particularmente no que diz respeito a sua especificação e ao processo de
+  raciocínio sobre o contexto.
   
   O artigo é descrito como segue: na seção 2 são apresentados conceitos de Computação Ubíqua. A
   seção 3 apresenta um breve resumo de Consciência de Situação. A seção 4 introduz conceitos de
@@ -107,19 +111,18 @@ Consciência de Situação, Sistemas baseados em regras, Ubicomp, Computação P
 %--------------------------------------------------------------------------------------------------
 \section{Computação Ubíqua}
 
-  O nome Ubíquo vem do Latim \textit{ubiquu}, que significa estar em todos os locais. Mark Weiser,
+  O termo Ubíquo vem do Latim \textit{ubiquu}, que significa estar em todos os locais. Mark Weiser,
   então cientista do Centro de Pesquisa da Xerox, definiu em seu artigo intitulado  \textit{The
   Computer for the 21st Century} o termo Computação Ubíqua como sendo a presença direta e constante
   de serviços de computação na vida dos usuários finais, dividindo a computação entre diversos
-  dispositivos conectados entre si. O desafio dos cientistas é tornar real o pensamento de Weiser,
-  e consequentemente a ubiquidade na computação, fazendo com que as interfaces se tornem
-  transparentes, armazenem informações e aprendam a partir dessas informações. Compartilhar dados,
-  informações de forma mais fácil e transparente, esta tecnologia fará parte do processo de
+  dispositivos conectados entre si \cite{weiser1991}. Atualmente, um dos grandes desafios da
+  pesquisa em computação é tornar concreto o pensamento de Weiser, fazendo com que as interfaces se
+  tornem transparentes, armazenem informações e aprendam a partir dessas informações. Compartilhar
+  dados, informações de forma mais fácil e transparente, esta tecnologia fará parte do processo de
   evolução do ser humano, onde cada vez mais a computação centralizada deixar de ser o único agente
-  que o usuário interage e multiplicar-se para usos especializados. A Computação Ubíqua,  não se
-  resume apenas pela computação, seu objetivo é integrar totalmente a relação
-  computação/periféricos com o usuário tornando-se  invisível, no sentido de a utilizar sem 
-  perceber.
+  que o usuário interage e multiplicar-se para usos especializados. A Computação Ubíqua,  tem como
+  objetivo integrar totalmente a relação computação/periféricos com o usuário tornando-se
+  invisível, no sentido de a utilizar sem perceber.
   
   A computação, embarcada nos mais diversos computadores, já faz parte da vida das pessoas em maior
   ou menor grau e essa interação juntamente com o número da computadores tente a aumentar,
@@ -127,19 +130,19 @@ Consciência de Situação, Sistemas baseados em regras, Ubicomp, Computação P
   interfaces naturais, tornando a comunicação com esses dispositivos mais transparente, interagindo
   com o usuário por meio de gestos, fala e visão, por exemplo.
   
-  Outra forma de interação é através da computação sensível ao contexto, que através do 
-  processamento de dados oriundos dos mais diversos sensores, percebe e interage com a realidade do
-  ambiente como por exemplo a movimentação do usuário através de um ambiente monitorado.
-  O computador, presente nos mais diversos dispositivos (smartphones, tablets, etc..), possui 
-  interfaces de comunicação, e como todas interfaces já consolidadas, tende a se tornar 
-  imperceptível, uma extensão dos sentidos humanos. Como exemplo de interfaces podemos citar um
-  óculos ou uma bengala, que pelo uso contínuo, o usuário abstrai o utensilio em si, utilizando-o
-  de forma transparente, focando apenas na realidade trazida pelo mesmo. Sob esta premissa, o uso
-  das interfaces passa a tornar-se inconsciente~\cite{weiser1993}. Nesse contexto as aplicações 
-  precisam ``entender'' e se ajustar ao ambiente, através do processamento de informações sobre o
-  contexto em que estão inseridas ~\cite{maciel2004}.
+  Outra forma de interação é através da computação consciente do contexto, que através do 
+  processamento de dados oriundos dos mais diversos sensores, percebe e interage com ambiente como
+  por exemplo a movimentação do usuário através de um ambiente. O computador, presente
+  nos mais diversos dispositivos (smartphones, tablets, etc..), possui interfaces de comunicação, e
+  como todas interfaces já consolidadas, tende a se tornar imperceptível, uma extensão dos sentidos
+  humanos. Como exemplo de interfaces podemos citar um óculos ou uma bengala, que pelo uso 
+  contínuo, o usuário abstrai o utensilio em si, utilizando-o de forma transparente, focando apenas
+  na realidade trazida pelo mesmo. Sob esta premissa, o uso das interfaces passa a tornar-se
+  inconsciente \cite{weiser1993}. Nesse contexto as aplicações precisam ``entender'' e se ajustar
+  ao ambiente, através do processamento de informações sobre o contexto em que estão inseridas
+  \cite{maciel2004}.
   
-  Essa nova classe de sistemas computacionais, conscientes ao contexto, abre perspectivas para o
+  Essa nova classe de sistemas computacionais, conscientes do contexto, abre perspectivas para o
   desenvolvimento de aplicações muito mais ricas, elaboradas e complexas, que exploram a natureza
   dinâmica e a mobilidade do usuário. Um desafio central na programação deste tipo de aplicação é
   possibilitar que as mesmas se adaptem continuamente ao ambiente e permaneçam funcionando mesmo
@@ -151,10 +154,10 @@ Consciência de Situação, Sistemas baseados em regras, Ubicomp, Computação P
   porte, atendem requisições de inúmeros usuários. Já com a computação pessoal, observamos uma
   convergência das máquinas para uso pessoal.
   
-  Visualizamos a computação ubíqua como uma rede invisível que permeia o usuário com dispositivos
+  Visualizamos a Computação Ubíqua como uma rede invisível que permeia o usuário com dispositivos
   inteligentes e que se intercomunicam, aprendem uns com os outros, com o ambiente e tomam
   decisões. Os recursos computacionais devem estar disponíveis ao usuário, promovendo adaptações
-  dinâmicas tanto dos serviços quanto aplicações satisfazendo as necessidades do usuário, de 
+  dinâmicas tanto dos serviços quanto das aplicações satisfazendo as necessidades do usuário, de 
   maneira mais transparente possível. Considerando esta perspectiva, a Computação Ubíqua constitui
   um ambiente altamente distribuído, heterogêneo, dinâmico, móvel, mutável e com forte interação
   entre homem e máquina ~\cite{Augustin03}.
@@ -181,13 +184,14 @@ Consciência de Situação, Sistemas baseados em regras, Ubicomp, Computação P
   \label{cs-piramide}
   \end{figure}
 
-  Consciência de situação é definida como uma interpretação semântica externa dos dados do sensor,
-  na área de Computação Ubíqua, \cite{anagnostopoulos2006} define situação como uma 
+  Consciência de situação é definida como uma interpretação semântica externa dos dados 
+  sensoreados, na área de Computação Ubíqua, \cite{anagnostopoulos2006} define situação como uma 
   particularização da consciência de contexto, onde situações são vistas como contextos logicamente
   ligados.
   
-  Então podemos identificar uma pirâmide Fig. \ref{cs-piramide}, onde sensores coletam dados para
-  compor contextos e posteriormente serem analisados para identificar possiveis situações.
+  Nesse sentido, podemos identificar uma pirâmide, conforme mostra a Figura \ref{cs-piramide},
+  onde sensores coletam dados para construção, composição do conhecimento de contexto e
+  posteriormente ser analisado para identificar possíveis situações.
 
   Outra definição é que situação consiste de um conjunto de elementos contextuais de interesse 
   instanciados relacionados de forma a prover alguma informação válida em um intervalo de tempo 
@@ -204,12 +208,12 @@ Consciência de Situação, Sistemas baseados em regras, Ubicomp, Computação P
   levadas em consideração para identificação da situação, sendo que em algumas situações a 
   relevância das perguntas pode mudar.
   
-  Conforme a definição de situação apresentada no modelo de Endsley na figura \ref{modelo-endsley} a
-  seguir, é introduzida a definição de consciência de situação. Para melhor entendimento do trabalho
-  optamos pela seguinte definição de situação: Consciência de situação consiste da percepção e
-  compreensão de uma ou mais situações e a projeção de seus efeitos em um futuro próximo
+
+  Na perspectiva desse trabalho, entende-se que Consciência de situação consiste da percepção e
+  compreensão de uma ou mais situações e a projeção de seus efeitos em um futuro próximo 
   \cite{endsley1995}. Endsley apresenta três níveis para obtenção de consciência de situação:
-  percepção, compreensão e projeção.
+  percepção, compreensão e projeção, conforme modelo apresentado na Figura \ref{modelo-endsley}.
+  Nas próximas seções serão detalhados esses níveis.
 
   % Modelo de Endsley
   % Para referenciar a figura ~\ref{modelo-endsley}
@@ -250,10 +254,10 @@ Consciência de Situação, Sistemas baseados em regras, Ubicomp, Computação P
 
 \subsubsection{Abordagens baseadas em aprendizado}
 
-  Os avanços em tecnologias de sensores impulsionam a implantação de uma ampla gama de sensores,
-  que no entanto prejudicam o desempenho das abordagens baseadas em especificações, pois se torna
-  inviável apenas usar o conhecimento de especialistas para definir as especificações adequadas
-  para situações a partir de um grande número de dados de sensores ruidosos.
+  Os avanços em tecnologias de sensoriamento impulsionam a implantação de uma ampla gama de
+  sensores, que no entanto prejudicam o desempenho das abordagens baseadas em especificações, pois
+  se torna inviável apenas usar o conhecimento de especialistas para definir as especificações
+  adequadas para situações a partir de um grande número de dados de sensores ruidosos.
   
   Para solucionar essa questão, técnicas de aprendizado de máquina juntamente com técnicas de
   mineração de dados são utilizadas para explorar as relações de associação entre os dados e 
